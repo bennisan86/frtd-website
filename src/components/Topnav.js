@@ -34,7 +34,7 @@ function Topnav() {
         <Link to="https://www.instagram.com/fromrahmtodei/" >
             <Image
                 src={IGlogo}
-                ml="8" mr="4"
+                ml="8" mr="3"
             />
         </Link>
         <Box cursor="pointer" onClick={toggle} fontSize="30px" color="brand.yellow">
