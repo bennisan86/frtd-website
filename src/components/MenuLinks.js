@@ -25,7 +25,7 @@ function MenuLinks({isOpen}) {
         >
           <Link to="/">Home</Link>
           <Link to="/lore">Lore</Link>
-          {/* <Link to="/sidequests">Sidequests</Link> */}
+          <Link to="/survey">Survey</Link>
           <Link to="/buy">Buy</Link>
         </Stack>
       </Box>

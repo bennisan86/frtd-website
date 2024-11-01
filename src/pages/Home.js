@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Image, Text, Heading } from '@chakra-ui/react';
 import bg from '../assets/bg_1.png';
 import SalDouJot from '../assets/SalDouJot.png';
-import cover from '../assets/FromRahmToDei_issue1_cover.png';
+import cover from '../assets/FromRahmToDei_issue2_cover.png';
 import loreintro2 from '../assets/lore_intro2.png';
 
 
@@ -33,11 +33,15 @@ function Home() {
           mx={"12vw"}
           w="88vw"
           maxW={"1622px"}
-          p={{base: "50px 0 50px 0", md: "7vw 0 7vw 7vw"}}>
+          p={{base: "50px 0 50px 0", md: "7vw 0 5vw 7vw"}}
+          >
           <Image
               src={cover}
               w={"248px"}
               h={"378px"}
+              shadow={"lg"}
+              mt={"-20px"}
+              transform={"rotate(-3deg)"}
           />
           <Flex
            direction={"column"}
@@ -47,8 +51,8 @@ function Home() {
            >
             <Box borderBottom={"1px dashed"} borderBottomColor={"brand.lightBrown"} p={{base: "8vw", md: "0 7vw 3vw 4vw"}}>
               <Text fontWeight={"semibold"} color={"brand.orange"}>Latest issue:</Text>
-              <Text fontWeight={"extrabold"} fontSize={{base:"24px", lg:"40px"}} lineHeight={{base:"24px", lg:"40px"}} color={"brand.orange"} textTransform={"uppercase"} mt="5px" mb={{base:"10px", lg:"30px"}}>#1 — A Hunter's song</Text>
-              <Text maxW={"727px"}>After a ferocious Gholek attack, the young hunter Sal seeks help for his injured parents in a nearby village. The story of his heroic actions impress the town folks, and also sparks the interested of traveling entertainers Jot and Dou. They see much more in Sal then a simple boy-hunter: they believe he is destined for the greatest of things...</Text>
+              <Text fontWeight={"extrabold"} fontSize={{base:"24px", lg:"40px"}} lineHeight={{base:"24px", lg:"40px"}} color={"brand.orange"} textTransform={"uppercase"} mt="5px" mb={{base:"10px", lg:"30px"}}>#2 — Through the leaves</Text>
+              <Text maxW={"727px"}>The violent invasion of the O'Shen has driven the Leegatten to take flight through the forest, through the trees. Will they survive this challenging journey to safety? And what about the O'Shen: do they have what it takes to brave the unforgiving jungle in pursuit of their target?</Text>
             </Box>
             <Button m={{base: "8vw", md: "30px 7vw 3vw 4vw"}} variant='outline' size='lg'>buy this issue</Button>
            </Flex>

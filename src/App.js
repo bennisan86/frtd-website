@@ -5,6 +5,7 @@ import Lore from './pages/Lore';
 // import Sidequests from './pages/Sidequests';
 // import Sidequest from './pages/Sidequest';
 import Buy from './pages/Buy';
+import Survey from './pages/Survey';
 import Layout from './components/Layout';
 
 import { ChakraBaseProvider } from '@chakra-ui/react'
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/lore" element={<Lore />} />
+          <Route path="/survey" element={<Survey />} />
+
           {/* <Route path="/sidequests" element={<Sidequests />} />
           <Route path="/sidequest" element={<Sidequest />} /> */}
           <Route path="/buy" element={<Buy />} />
