@@ -1,6 +1,6 @@
 import { HashLink as Linko } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
-import { Box, Button, Flex, Heading, Image, List, ListItem, OrderedList,Text,UnorderedList } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Image, ListItem,Text,UnorderedList } from '@chakra-ui/react';
 import cover1 from '../assets/FromRahmToDei_issue1_cover.png';
 import cover2 from '../assets/FromRahmToDei_issue2_cover.png';
 

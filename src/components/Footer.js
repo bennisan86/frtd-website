@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+// import { useEffect, useState } from "react";
+// import { useLocation } from "react-router-dom";
 import { Flex, Heading, Image, Link,} from '@chakra-ui/react';
 import FRTDlogo from '../assets/FRTD_logo_dark.png';
 // import IGlogo from '../assets/IG.png';
