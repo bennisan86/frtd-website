@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Box, Button, Flex, Heading, Image, ListItem,Text,UnorderedList } from '@chakra-ui/react';
 import cover1 from '../assets/FromRahmToDei_issue1_cover.png';
 import cover2 from '../assets/FromRahmToDei_issue2_cover.png';
-
+import GumroadLogo from '../assets/Gumroad-Emblem-700x394.png';
+import Externallink from '../assets/external.png';
 
 function Buy() {
     return (
@@ -29,7 +30,7 @@ function Buy() {
         </Box>
         <Box id="orderhere" w={"full"} py={{base:"10px",lg:"50px"}} px="10vw" borderBottomColor={"brand.darkBrown"}>
         <Text textTransform={"uppercase"} fontWeight={"extrabold"} fontSize={"20px"} lineHeight={"30px"} mb="10px">Order here</Text>
-        <Text maxW={"900px"} mb={"50px"}>'From Rahm To Dei' is published by Sunchild Comics. Find and order their products on Gumroad! </Text>
+        <Text maxW={"900px"} mb={"50px"}>'From Rahm To Dei' is published by Sunchild Comics. Find and order their products on <Text as="span" color="brand.orange" textDecoration={"underline"}><a href="https://sunchildcomics.gumroad.com/" >Gumroad</a></Text>! </Text>
         
         <Flex
           direction={{base:'column', md:'row'}}
@@ -48,16 +49,45 @@ function Buy() {
            direction={"column"}
            alignItems={"flex-start"}
            justifyContent={"flex-start"}
-
+            maxW={"full"}
            >
             <Box borderBottom={"1px dashed"} borderBottomColor={"brand.lightBrown"} p={{base: "8vw", md: "0 7vw 3vw 4vw"}}>
               {/* <Text fontWeight={"semibold"} color={"brand.orange"}>Latest issue:</Text> */}
               <Text fontWeight={"extrabold"} fontSize={{base:"18px", lg:"26px"}} lineHeight={{base:"18px", lg:"26px"}} color={"brand.orange"} textTransform={"uppercase"} mt="5px" mb={{base:"10px", lg:"20px"}}>#1 — A Hunter's song</Text>
-              <Text maxW={"727px"} fontSize={{base:"14px", lg:"16px"}} lineHeight={{base:"16px", lg:"22px"}}>After a ferocious Gholek attack, the young hunter Sal seeks help for his injured parents in a nearby village. The story of his heroic actions impress the town folks, and also sparks the interested of traveling entertainers Jot and Dou. They see much more in Sal then a simple boy-hunter: they believe he is destined for the greatest of things...</Text>
+              <Text maxW={"727px"} fontSize={{base:"14px", lg:"16px"}} lineHeight={{base:"22px", lg:"22px"}}>After a ferocious Gholek attack, the young hunter Sal seeks help for his injured parents in a nearby village. The story of his heroic actions impress the town folks, and also sparks the interested of traveling entertainers Jot and Dou. They see much more in Sal then a simple boy-hunter: they believe he is destined for the greatest of things...</Text>
             </Box>
-            <Flex direction={"column"} p={{base: "8vw", md: "30px 7vw 3vw 4vw"}}>
-              <a target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/czfdhe"}><Button variant='outline' size='lg' mb="3">buy this issue digital</Button></a>
-              <Button disabled="true" variant='outline' size='lg'>buy this issue print</Button>
+            <Flex w="full" direction={{base: "column", lg:"row"}} p={{base: "8vw", md: "30px 7vw 3vw 4vw"}} alignItems={"flex-start"} justify={"flex-start"}>
+              <Flex direction={"column"} maxW={"full"}>
+                <a w="full" target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/mhync"}><Button w={"full"} variant='outline' size='lg'  mb="3">
+                  buy print issue
+                  <Image
+                      src={Externallink}
+                      w={"12px"}
+                      h={"13px"}
+                      ml={"8px"}
+                  />
+                  </Button></a>
+                <a w="full" target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/czfdhe"}><Button  w={"full"} variant='outline' size='lg'>
+                  buy digital issue
+                  <Image
+                      src={Externallink}
+                      w={"12px"}
+                      h={"13px"}
+                      ml={"8px"}
+                  />
+                  </Button></a>
+              </Flex>
+              <a target="_blank" rel="noopener noreferrer" href="https://sunchildcomics.gumroad.com/">
+                <Flex direction={"row"} ml={{base: "0", lg: "30px"}} border={"1px"} borderColor={"brand.lightBrown"} p="15px">
+                  <Image
+                      src={GumroadLogo}
+                      w={"26px"}
+                      h={"26px"}
+                      mr={"8px"}
+                  />
+                  <Text fontSize={"12px"} lineHeight={"14px"} fontStyle={"italic"} opacity={0.75}>All our products are sold via Gumroad</Text>
+                </Flex>
+              </a>
             </Flex>
            </Flex>
         </Flex>
@@ -81,16 +111,45 @@ function Buy() {
            direction={"column"}
            alignItems={"flex-start"}
            justifyContent={"flex-start"}
-
+           maxW={"full"}
            >
             <Box borderBottom={"1px dashed"} borderBottomColor={"brand.lightBrown"} p={{base: "8vw", md: "0 7vw 3vw 4vw"}}>
               {/* <Text fontWeight={"semibold"} color={"brand.orange"}>Latest issue:</Text> */}
               <Text fontWeight={"extrabold"} fontSize={{base:"18px", lg:"26px"}} lineHeight={{base:"18px", lg:"26px"}} color={"brand.orange"} textTransform={"uppercase"} mt="5px" mb={{base:"10px", lg:"20px"}}>#2 — Through the leaves</Text>
-              <Text maxW={"727px"} fontSize={{base:"14px", lg:"16px"}} lineHeight={{base:"16px", lg:"22px"}}>The violent invasion of the O’Shen has driven the Leegatten to take flight through the forest, through the trees. Will they survive this challenging journey to safety? And what about the O'Shen: do they have what it takes to brave the unforgiving jungle in pursuit of their target?</Text>
+              <Text maxW={"727px"} fontSize={{base:"14px", lg:"16px"}} lineHeight={{base:"16px", lg:"22px"}}>The violent invasion of the O'Shen has driven the Leegatten to take flight through the forest, through the trees. Will they survive this challenging journey to safety? And what about the O'Shen: do they have what it takes to brave the unforgiving jungle in pursuit of their target?</Text>
             </Box>
-            <Flex direction={"column"} p={{base: "8vw", md: "30px 7vw 3vw 4vw"}}>
-              <a target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/czfdhe"}><Button variant='outline' size='lg' mb="3">buy this issue digital</Button></a>
-              <Button disabled="true" variant='outline' size='lg'>buy this issue print</Button>
+            <Flex w="full" direction={{base: "column", lg:"row"}} p={{base: "8vw", md: "30px 7vw 3vw 4vw"}}>
+              <Flex direction={"column"} maxW={"full"}>
+                <a w="full" target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/nrjda"}><Button w="full" variant='outline' size='lg' mb="3">
+                  buy print issue
+                  <Image
+                      src={Externallink}
+                      w={"12px"}
+                      h={"13px"}
+                      ml={"8px"}
+                  /></Button>
+                  </a>
+                <a w="full" target="_blank" rel="noopener noreferrer" href={"https://sunchildcomics.gumroad.com/l/elrxb"}><Button w="full" variant='outline' size='lg'>
+                  buy digital issue
+                  <Image
+                      src={Externallink}
+                      w={"12px"}
+                      h={"13px"}
+                      ml={"8px"}
+                  />
+                  </Button></a>
+              </Flex>
+              <a target="_blank" rel="noopener noreferrer" href="https://sunchildcomics.gumroad.com/">
+                <Flex direction={"row"} ml={{base: "0", lg: "30px"}} border={"1px"} borderColor={"brand.lightBrown"} p="15px">
+                  <Image
+                      src={GumroadLogo}
+                      w={"26px"}
+                      h={"26px"}
+                      mr={"8px"}
+                  />
+                  <Text fontSize={"12px"} lineHeight={"14px"} fontStyle={"italic"} opacity={0.75}>All our products are sold via Gumroad</Text>
+                </Flex>
+              </a>
             </Flex>
            </Flex>
         </Flex>

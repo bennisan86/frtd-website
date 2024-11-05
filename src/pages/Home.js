@@ -3,6 +3,7 @@ import bg from '../assets/bg_1.png';
 import SalDouJot from '../assets/SalDouJot.png';
 import cover from '../assets/FromRahmToDei_issue2_cover.png';
 import loreintro2 from '../assets/lore_intro2.png';
+import { Link } from 'react-router-dom';
 
 
 
@@ -54,7 +55,7 @@ function Home() {
               <Text fontWeight={"extrabold"} fontSize={{base:"24px", lg:"40px"}} lineHeight={{base:"24px", lg:"40px"}} color={"brand.orange"} textTransform={"uppercase"} mt="5px" mb={{base:"10px", lg:"30px"}}>#2 — Through the leaves</Text>
               <Text maxW={"727px"}>The violent invasion of the O'Shen has driven the Leegatten to take flight through the forest, through the trees. Will they survive this challenging journey to safety? And what about the O'Shen: do they have what it takes to brave the unforgiving jungle in pursuit of their target?</Text>
             </Box>
-            <Button m={{base: "8vw", md: "30px 7vw 3vw 4vw"}} variant='outline' size='lg'>buy this issue</Button>
+            <Link to={'/buy'}><Button m={{base: "8vw", md: "30px 7vw 3vw 4vw"}} variant='outline' size='lg'>buy this issue</Button></Link>
            </Flex>
         </Flex>
         <Flex
